@@ -1,0 +1,33 @@
+//using led
+const int redLed=3;
+void setup(){
+    pinMode(redLed,OUTPUT);
+}
+void loop(){
+    digitalWrite(redPin,HIGH); //digitalWrite is used to activate or deactivate digital pins
+}
+
+//using serial monitor
+void setup(){
+    Serial.begin(9600);
+}
+void loop(){
+    int value=10;
+    Serial.print("Value : ");
+    Serial.print(value);
+}
+
+//Using analog input
+const int sensor=A0;
+void loop(){
+    int sensorValue=analogRead(sensor);
+}
+
+//If taking input from digitalpin in ultrasonic
+const int echo=3;
+void setup(){
+    pinMode(echo,INPUT);//This will be input
+}
+void loop(){
+    int value=pulseIn(echo,HIGH);
+}
